@@ -17,7 +17,14 @@ class ViewController: UIViewController {
         for name in ["张三", "王二", "李四", "陆八"] {
             print(name)
         }
-
+        //元组的for in
+        for (num, english) in [1: "One", 2: "Two", 3: "Three"] {
+            print("\(num)对应\(english)");
+        }
+        //Range的 for in
+        for item in 1...5 {
+            print(item)
+        }
 
     }
 
