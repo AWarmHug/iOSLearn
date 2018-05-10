@@ -25,7 +25,10 @@ class ViewController: UIViewController {
         for item in 1...5 {
             print(item)
         }
-
+        //如果不需要知道具体的item 可以使用_ 来代替
+        for _ in 1...5 {
+            print("打印一下")
+        }
     }
 
 
