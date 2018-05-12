@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3792819D30ACD73E9B9FABAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37928697782F9A24238161CB /* Main.storyboard */; };
 		379283AF2C2A19C887C3F5F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379288085E3B158F5E54CEA3 /* ViewController.swift */; };
+		37928A30CBC8A5441844CAB7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37928C953B3D9E12E85ECB4D /* Person.swift */; };
 		37928B7A7BA6C8A156DD920C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3792878B44DF8FBCE51D429A /* AppDelegate.swift */; };
 		37928DC3C930FA5E031FF652 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37928920D08479E95EDA548F /* Assets.xcassets */; };
 		37928EC5027343B516DCAACB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37928FE9431A94070B92C151 /* LaunchScreen.storyboard */; };
@@ -21,6 +22,7 @@
 		3792878B44DF8FBCE51D429A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		379288085E3B158F5E54CEA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37928920D08479E95EDA548F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37928C953B3D9E12E85ECB4D /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Model/Person.swift; sourceTree = "<group>"; };
 		37928E845864E11C91B16A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +54,7 @@
 				3792878B44DF8FBCE51D429A /* AppDelegate.swift */,
 				37928697782F9A24238161CB /* Main.storyboard */,
 				379288085E3B158F5E54CEA3 /* ViewController.swift */,
+				37928C953B3D9E12E85ECB4D /* Person.swift */,
 			);
 			path = "Basis-POP";
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 			files = (
 				37928B7A7BA6C8A156DD920C /* AppDelegate.swift in Sources */,
 				379283AF2C2A19C887C3F5F1 /* ViewController.swift in Sources */,
+				37928A30CBC8A5441844CAB7 /* Person.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
