@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  iOS1_1
+//  iOS1_UiTableView
 //
-//  Created by Warm-mac on 2018/5/12.
+//  Created by Warm-mac on 2018/5/13.
 //  Copyright © 2018年 me.warm. All rights reserved.
 //
 
@@ -15,10 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        var navi = UINavigationController(rootViewController: RootViewController(nibName: "RootViewController", bundle: nil));
-        window?.rootViewController = navi
-        window?.makeKeyAndVisible()
+        // Override point for customization after application launch.
         return true
     }
 
