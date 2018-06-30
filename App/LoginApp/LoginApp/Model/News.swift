@@ -8,9 +8,14 @@
 
 import Foundation
 
-struct BaseModel<T> {
+struct BaseError: Error {
+    var code: Int
+    var message: String
+}
+
+struct BaseModel<T>: Codable where T: Codable {
     var error: Bool = false
-    var results: [T] = [T]()
+    var results: [T]
 }
 
 /**
@@ -32,7 +37,7 @@ struct BaseModel<T> {
 "who": "android_ls"
 }
  */
-struct GankNews {
+struct GankNews: Codable {
     var _id: String!
     var createdAt: String!
     var desc: String!

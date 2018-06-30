@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class MainViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var utv: UITableView!
@@ -26,13 +27,20 @@ class MainViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         utv.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
-
+        getData()
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    func getData() {
+        //http://gank.io/api/data/Android/10/1
+//        var url = baseUrl!.appendingPathComponent("data").appendingPathComponent("Android").appendingPathComponent("10").appendingPathComponent("1");
+//        Alamofire.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil)
+//                .response
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
