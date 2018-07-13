@@ -17,7 +17,7 @@ func loadDataByType(type: Type, page: Int, success: @escaping ([GankNews])->Void
     let url = baseUrl!.appendingPathComponent("data").appendingPathComponent(type.rawValue).appendingPathComponent(String(pageSize)).appendingPathComponent(String(page));
     Alamofire.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil)
             .responseJSON { response in
-                if let error = response.error {
+                if response.error != nil {
                     fail(BaseError(code: 200, message: "出错了"))
                 } else {
                     do {
